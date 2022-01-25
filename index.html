@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    
+    <title>Welcome to World of Books</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="#" class="logo">World of Books</a>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><input type="text" id="search" placeholder="Search"></li>
+            </ul>
+        </div>
+    </header>
+    <div id="message"></div>
+    <main>
+        <div class="container">
+            <h1>World of Books</h1>
+            <hr>
+            <form id="libraryForm">
+                <table>
+                    <tr>
+                        <td class="col-1">Book Name</td>
+                         <td class="col-2">
+                            <input type="text" id="bookName" placeholder="Book Name">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td>Author</td>
+                        <td class="col-2">
+                            <input type="text" id="author" placeholder="Enter Author Name">
+                        </td>
+                    </tr>
+                    <tr class="row">
+                        <td class="type">Type</td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="type" id="fiction" value="Fiction" checked>
+                                    </td>
+                                    <td>
+                                        <label for="type">Fiction</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="type" id="programming" value="Programming">
+                                    </td>
+                                    <td>
+                                        <label for="type">Computer Programming</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="type" id="cooking" value="Cooking">
+                                    </td>
+                                    <td>
+                                        <label for="type">Cooking</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="btn">Add Book</button>
+            </form>
+
+            <div id="table">
+                <h1>Your books</h1><hr>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="row-2">Name</th>
+                            <th class="row-2">Author</th>
+                            <th class="row-2">Type</th>
+                            <th class="row-2">#</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                           
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+    <script src="index.js"></script>
+</html>
